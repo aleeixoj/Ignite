@@ -1,5 +1,6 @@
 import express from 'express';
 import './database';
+import './shared/container';
 import swaggerUi from 'swagger-ui-express';
 
 import { router } from './routes';
