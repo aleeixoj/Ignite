@@ -10,6 +10,6 @@ RUN yarn install
 
 COPY . .
 
-EXPOSE 3334
+EXPOSE 3333
 
 CMD ["yarn", "dev"]
