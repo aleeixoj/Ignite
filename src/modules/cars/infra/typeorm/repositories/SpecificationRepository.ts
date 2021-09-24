@@ -37,7 +37,6 @@ class SpecificationsRepository implements ISpecificationsRepository {
 
   async findByIds(ids: string[]): Promise<Specification[]> {
     const specifications = await this.repository.findByIds(ids);
-
     return specifications;
   }
 }
