@@ -12,7 +12,7 @@ import createConnection from '@shared/infra/typeorm';
 
 import swaggerFile from '../../../swagger.json';
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 3334;
 
 createConnection();
 const app = express();
