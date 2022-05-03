@@ -19,7 +19,7 @@ class DevolutionRentalUseCase {
     private carsRepository: ICarsRepository,
     @inject('DayjsDateProvider')
     private dateProvider: IDateProvider
-  ) {}
+  ) { }
   async execute({ id, user_id }: IRequest): Promise<Rental> {
     const rental = await this.rentalsRepository.findById(id);
     const car = await this.carsRepository.findById(rental.car_id);

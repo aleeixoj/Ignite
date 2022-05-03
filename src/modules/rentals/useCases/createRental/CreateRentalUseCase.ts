@@ -21,7 +21,7 @@ class CreateRentalUseCase {
     private dateProvider: IDateProvider,
     @inject('CarsRepository')
     private carsRepository: ICarsRepository
-  ) {}
+  ) { }
   async execute({
     user_id,
     car_id,
